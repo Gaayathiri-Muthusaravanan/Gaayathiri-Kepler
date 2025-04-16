@@ -41,7 +41,8 @@ h2{
     height: 60px;
 }
 section{
-    padding-bottom: 50px;;
+    padding: 20px;;
+    margin: 40px 0;
 }
 
 #about {
