@@ -1,0 +1,62 @@
+#name{
+    background-color: rgb(58, 96, 126);
+    padding: 50px 20px 20px 20px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+body {
+    font-family: "Trirong", sans-serif;
+    line-height: 40px;
+    background-color: rgb(226, 232, 236);
+}
+
+.container {
+    background-color: #fff;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+    border: 1px solid #ddd; 
+}
+h2{
+    color: rgb(58, 96, 126);
+}
+#experience{
+ 
+        background-color: #eaf0f3;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+      
+}
+.icon {
+    width: 60px; 
+    height: 60px;
+}
+section{
+    padding: 20px;;
+    margin: 40px 0;
+}
+
+#about {
+    text-align: center;
+}
+
+#connect {
+   text-align: center;
+    gap: 30px;
+}
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%; 
+    margin-top: 20px;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit:fill; 
+}
