@@ -1,6 +1,5 @@
 const footer = document.getElementById("footer");
 const container = document.querySelector(".container");
-container.appendChild(footer);
 footer.style.textAlign="center";
 footer.style.backgroundColor="#2c3e50";
 footer.style.color="white";
@@ -9,13 +8,13 @@ footer.innerHTML = "Copyrights";
 const today = new Date();
 const thisYear = today.getFullYear();
 footer.innerHTML = `&copy; Gaayathiri Muthusaravanan ${thisYear} — All rights reserved.`;
-const skillArray = ["Java", "Java script", "HTML", "CSS", "Github"];
-const skillSection = document.getElementById("skills");
-const skillList = document.getElementById("skillList");s
-for(let i=0; i<skillArray.length; i++){
-    const skillItem = document.createElement("li");
-    skillItem.className = "skill-item";
-    skillItem.textContent = skillArray[i];
-    skillList.appendChild(skillItem);
+const skills = ["Java", "Java script", "HTML", "CSS", "Github"];
+const skillsSection = document.getElementById("skills");
+const skillsList = document.querySelector(".skillsList");
+for(let i=0; i<skills.length; i++){
+    const skillsItem = document.createElement("li");
+    skillsItem.className = "skillsItem";
+    skillsItem.textContent = skills[i];
+    skillsList.appendChild(skillsItem);
 }
-skillSection.appendChild(skillList);
+skillsSection.appendChild(skillsList);
