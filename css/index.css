@@ -114,14 +114,14 @@ nav{
     
 }
 .skillsItem{
-    border: 2px solid #567853;
+    border: 0.5px solid #3f586967;
     margin: 20px 20px;
     font-size: 20px;
-    background-color: #567853;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Tablet Styles  (≤1024px) */
