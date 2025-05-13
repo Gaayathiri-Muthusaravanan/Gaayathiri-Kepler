@@ -75,18 +75,18 @@
             </section>
             <section id ="Leave-a-Message">
                 <h2>Leave a Message</h2>
-                <form name = "leave-message">
-                    <label>Username</label><br/>
-                    <input class="messageInputFields" type = "text" name = "usersName" required = "true"/><br/>
-                    <label>Email</label><br/>
-                    <input class="messageInputFields"  type = "email" name = "usersEmail" required = "true"/><br/>
-                    <label>Message</label><br/>
+                <form name = "leave_message">
+                    <label for="userName">Username</label><br/>
+                    <input id= "userName" class="messageInputFields" type = "text" name = "usersName" required = "true"/><br/>
+                    <label for="email">Email</label><br/>
+                    <input id = "email" class="messageInputFields"  type = "email" name = "usersEmail" required = "true"/><br/>
+                    <label for="message">Message</label><br/>
                     <textarea id ="messageTextArea" class="messageInputFields"  name="usersMessage"></textarea><br/>
                     <button id = "messageSubmitButton" class="messageInputFields" type="submit">Submit</button>
 
                 </form>
             </section>
-            <section id = "messages">
+            <section id = "Messages">
                 <h2>Messages</h2>
                 <ul>
 

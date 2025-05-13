@@ -18,7 +18,7 @@ for(let i=0; i<skills.length; i++){
     skillsList.appendChild(skillsItem);
 }
 skillsSection.appendChild(skillsList);
-const messageForm = document.getElementsByName("leave-message")[0];
+const messageForm = document.getElementsByName("leave_message")[0];
 messageForm.addEventListener("submit",function(event){
     event.preventDefault();
     const usersName = event.target.usersName.value;
