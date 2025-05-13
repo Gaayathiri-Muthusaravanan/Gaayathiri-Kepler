@@ -21,19 +21,19 @@ skillsSection.appendChild(skillsList);
 const messageForm = document.getElementsByName("leave-message")[0];
 messageForm.addEventListener("submit",function(event){
     event.preventDefault();
-    const userName = event.target.userName.value;
-    const userEmail = event.target.userEmail.value;
-    const userMessage = event.target.userMessage.value;
-    console.log(userName);
-    console.log(userEmail);
-    console.log(userMessage);
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+    console.log(usersName);
+    console.log(usersEmail);
+    console.log(usersMessage);
     messageForm.reset();
-    const messageSection = document.getElementById("messages");
+    const messageSection = document.getElementById("Messages");
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
     newMessage.innerHTML = ` 
-    <a href="mailto:${userEmail}">${userName}</a> 
-     <span>: ${userMessage}</span>`;
+    <a href="mailto:${usersEmail}">${usersName}</a> 
+     <span>: ${usersMessage}</span>`;
 
     messageList.appendChild(newMessage);
     /*
