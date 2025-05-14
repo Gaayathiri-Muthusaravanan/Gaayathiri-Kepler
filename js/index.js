@@ -8,7 +8,7 @@ footer.innerHTML = "Copyrights";
 const today = new Date();
 const thisYear = today.getFullYear();
 footer.innerHTML = `&copy; Gaayathiri Muthusaravanan ${thisYear} — All rights reserved.`;
-const skills = ["Java", "Java script", "HTML", "CSS", "Github"];
+const skills = ["Java", "JavaScript", "HTML", "CSS", "Github"];
 const skillsSection = document.getElementById("skills");
 const skillsList = document.querySelector(".skillsList");
 for(let i=0; i<skills.length; i++){
@@ -31,30 +31,17 @@ messageForm.addEventListener("submit",function(event){
     const messageSection = document.getElementById("Messages");
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
+    newMessage.id="userNameList";
     newMessage.innerHTML = ` 
-    <a href="mailto:${usersEmail}">${usersName}</a> 
-     <span>: ${usersMessage}</span>`;
+    <a href="mailto:${usersEmail}" id = "user-link">${usersName}</a> <br/>
+     <span>${usersMessage}</span><br/>
+    `;
 
     messageList.appendChild(newMessage);
-    /*
-
- Append the newMessage to the messageList element
- Save and refresh your browser (or just check your browser for changes if using live extension)
-Style your Message Form
- Open your index.css file
- Style your message form fields and buttons keeping in mind:
- adequate specing so form fields aren't crowded
- appropriate sizing in media queries so a user on a mobile device can easily touch/tap into the fields to type
- button sizing to accomodate click and touch/tap interactions
-Stretch Goals
-These tasks are entirely optional, but if you'd like a challenge then do your best to complete each item.
-
- (Optional) Hide the #messages section, including the Messages header, when the list is empty
- (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
-
-    */
+   
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
+    removeButton.id = "removeButton";
     removeButton.type = "button";
     removeButton.addEventListener("click",function(e){
         let entry = removeButton.parentNode;
@@ -62,6 +49,21 @@ These tasks are entirely optional, but if you'd like a challenge then do your be
         
     })
     newMessage.appendChild(removeButton);
+    
     messageList.appendChild(newMessage);
+    const editButton = document.createElement("button");
+    editButton.id = "editButton";
+    editButton.innerText = "edit";
+    editButton.type = "button";
+    editButton.addEventListener("click", function(){
+        const messageSpan = newMessage.querySelector("span");
+        const currentMessage = messageSpan.textContent;
+        const editedMessageText = prompt("Edit message:", currentMessage);
+        messageSpan.textContent = editedMessageText;
+        
+    })
+    newMessage.appendChild(editButton);
+    const hr = document.createElement("hr");
+    newMessage.appendChild(hr);
 })
 
